@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aura Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> Aura Watch</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html"> Products</a>
+          <a href="service.html"> Services</a>
+          <a href="contact.html">Contat Us</a>
+          <a href="login.html" class="login-btn">Login</a>
+          <a href="sign up.html" class="signup-btn"> Sign Up</a>
+        </div>
+      </nav>
+
+      <form class="any" id="loginForm">
+        <h2 class="text-center mb-4">Login Here</h2>
+    
+        <div class="field">
+          <input type="text" id="Username" name="username" required>
+          <label>Email or Username</label>
+        </div>
+    
+        <div class="field">
+          <input type="password" id="password" name="password" required>
+          <label>Password</label>
+        </div>
+    
+        <!-- Important: type="button" to avoid default submit -->
+        <button type="button" class="btn btn-primary w-100" onclick="SubmitForm()">Login</button>
+    
+        <div class="links text-center">
+          <p><a href="#">Forgot password?</a></p>
+          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+      </form>
+    
+      <script>
+        function SubmitForm() {
+          // Get input values
+          let Username = document.getElementById("Username").value;
+          let password = document.getElementById("password").value;
+    
+          // Validation
+          if (Username === "") {
+            alert("❌ Please enter your Username");
+          } 
+          else if (password === "") {
+            alert("❌ Please enter your password");
+          } 
+          else {
+            // Alert message
+            alert(
+              "✅ Message Sent Successfully!\n\n" +
+              "Email or Username: " + Username + "\n" +
+              "Password: " + password
+            );
+          }
+        }
+      </script>
+      
+      
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          
+          <div class="footer-section brand">
+            <h2 class="logo">Aura Watch</h2>
+            <p>Smart technology designed to feel natural.</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Models</a></li>
+              <li><a href="#">App</a></li>
+              <li><a href="#">Health Tracking</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 Aura Watch. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      
+</body>
+</html>

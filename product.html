@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> Aura Watch</div>
+        <p id="cart">🛒 Cart: <span id="count">0</span></p>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html"> Products</a>
+            <a href="service.html"> Service</a>
+            <a href="contact.html">Contat Us</a>
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="sign up.html" class="signup-btn"> Sign Up</a>
+
+        </div>
+    </nav>
+
+    <h1> Our Aura Watches</h1>
+
+    <div class="products">
+        <div class="card">
+            <h3>Black Aura Watch</h3>
+            <p>Aura Black Unisex Wristwatch in PakistanDiscover the perfect
+                of style and simplicity with the Aura Black ...</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>White Aura Watch</h3>
+            <p>white Aura Quartz Watch – Stylish Analog Watch for Men & Boys...</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Blue Aura Watch</h3>
+            <p>Aura watch - New Blue Arabic Marble Aura Watch dark blue Modern Creative Design For Men - watch...</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        let cartCount = 0;
+
+        function addToCart() {
+            cartCount++;
+            document.getElementById("count").innerHTML = cartCount;
+        }
+    </script>
+</body>
+
+</html>
